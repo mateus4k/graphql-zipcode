@@ -1,10 +1,10 @@
 import { ApolloServer } from 'apollo-server';
 import typeDefs from './schema';
-import { cep as cepResolver } from './resolvers';
+import resolvers from './resolvers';
 
 const server = new ApolloServer({
   typeDefs,
-  resolvers: cepResolver,
+  resolvers,
 });
 
 server.listen(process.env.PORT || 4000).then(({ url }) => {

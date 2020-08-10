@@ -1,1 +1,3 @@
-export { default as cep } from './cep.resolver';
+import cepResolver from './cep';
+
+export default [cepResolver];
