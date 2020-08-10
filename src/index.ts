@@ -11,5 +11,5 @@ const server = new ApolloServer({
 
 server.listen(process.env.PORT || 4000).then(({ url }) => {
   // eslint-disable-next-line no-console
-  console.log(`Server is running in ${url}`);
+  console.log(`🚀  Server ready at ${url}`);
 });
