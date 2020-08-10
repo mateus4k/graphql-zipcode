@@ -1,9 +1,9 @@
 import { ApolloServer } from 'apollo-server';
-import { cep as cepType } from './types';
+import typeDefs from './schema';
 import { cep as cepResolver } from './resolvers';
 
 const server = new ApolloServer({
-  typeDefs: cepType,
+  typeDefs,
   resolvers: cepResolver,
 });
 

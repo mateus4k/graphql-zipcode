@@ -14,7 +14,7 @@ export default gql`
         gia: String!
     }
 
-    type Query {
+    extend type Query {
         cep(cep: String!): Cep
     }
 `;
